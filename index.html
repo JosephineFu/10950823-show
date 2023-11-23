@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>活動推廣網站!</title>
+    <title>自定義主題畢業製作推廣網站</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
 
         header {
@@ -23,31 +24,26 @@
             max-width: 800px;
             margin: auto;
             padding: 20px;
-        }
-
-        .event-card {
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            overflow: hidden;
+            margin-top: 20px;
         }
 
-        .event-card img {
-            width: 100%;
-            height: auto;
+        form {
+            display: flex;
+            flex-direction: column;
         }
 
-        .event-details {
-            padding: 20px;
+        label {
+            margin-bottom: 8px;
         }
 
-        h2 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
+        input, textarea {
+            margin-bottom: 16px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
 
         button {
@@ -58,43 +54,17 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
+        .custom-theme {
+            color: #FF5733; /* 橙色 */
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>活動推廣網站</h1>
-</header>
+    <h1 class="custom-theme">自定義主題畢業製作
 
-<section>
-    <div class="event-card">
-        <img src="event1.jpg" alt="Event 1">
-        <div class="event-details">
-            <h2>畢製展覽</h2>
-            <p>一個展示學生畢業製作的盛大活動，歡迎大家踴躍參加！</p>
-            <button onclick="showDetails('event1')">了解更多</button>
-        </div>
-    </div>
-
-    <div class="event-card">
-        <img src="event2.jpg" alt="Event 2">
-        <div class="event-details">
-            <h2>班級演出</h2>
-            <p>學生精心準備的精彩演出，讓您度過一個難忘的夜晚。</p>
-            <button onclick="showDetails('event2')">了解更多</button>
-        </div>
-    </div>
-
-    <!-- 可以根據需要添加更多的活動卡片 -->
-
-</section>
-
-<script>
-    function showDetails(eventId) {
-        // 在這裡你可以添加跳轉至詳細資訊頁面的程式碼，或者顯示詳細資訊的模態框等
-        alert('顯示活動 ' + eventId + ' 的詳細資訊');
-    }
-</script>
 
 </body>
 </html>
